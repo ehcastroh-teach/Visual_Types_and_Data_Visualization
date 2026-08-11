@@ -1,74 +1,139 @@
 <hr style="border: 8px solid#0B0B0B;" />
 
-<img src="assets/data/story_images/predli_header.png"
+<img src="./images/predli_header.png"
      alt="Predli Logo"
-     align="center" 
-     style="align:center" 
+     align="center"
+     style="align:center"
      width="45%" />
-     
-     
-# **Learn2Launch:** <br> Introduction to Data Types, Data Visualization &amp; Visual Storytelling.
 
 
+# Introduction to Data Types, Data Visualization & Visual Storytelling
 
-**Author list:** [Elias Castro Hernandez](https://www.linkedin.com/in/ehcastroh/)
+**Author list:** [Elias Castro Hernandez](https://www.linkedin.com/in/ehcastroh/) and [Alexander Fred-Ojala](https://www.linkedin.com/in/alexanderfo/)
 
-**Learning Goal(s):** The goal of this series of notebooks is to provide users with the necessary foundations for building and understanding current state of the art visualizations. An additional aim is to provide users with an understanding of both the theory and techniques of various visualization paradigms. Finally, this series of notebooks seeks to provide sufficient knowledge to users so that they may build & evaluate various visualization systems, read & discuss visualization literature, and successfully convey visual information.
+**Learning Goal(s):** This series of notebooks provides the foundations for building and understanding current state-of-the-art visualizations. It covers both the theory and techniques of various visualization paradigms, giving learners the tools to build and evaluate visualization systems, engage with visualization literature, and communicate effectively with data.
 
 <hr style="border: 4px solid#0B0B0B;" />
 
-### **About**
+### About
 
-The following notebooks were created for UC Berkeley's Learn2Launch program. They are intended to provide a rapid introduction to common python visualization libraries, as well as introduce the user to more advanced visualization libraries and engines. The notebooks are structured into 3 parts.
+These notebooks provide a rapid introduction to Python visualization libraries - from core libraries like Matplotlib and Seaborn through advanced interactive tools like Plotly and Altair. The series is structured into three notebooks plus hands-on breakout exercises.
 
-  - Visualization Intro 1 -- Fundamental overview of data classification theory and how it relates to visualization theory.
-  - Visualization Intro 2 -- Explores various plotting libraries, and introduces more advanced visualization libraries.
-  - Visualization Intro 3 -- Covers zero-coding libraries and their integration into Jupyter.
+---
 
+## Quick Start
 
+### Requirements
 
-#### **I. Introduction to Data Types and Visualization Principles.**
+```bash
+pip install matplotlib seaborn pandas numpy plotnine plotly altair vega_datasets scipy colorlover
+```
 
-<img src="assets/data/story_images/Smith_Data_Levels_Numerical.png"
+Or with conda:
+
+```bash
+conda install matplotlib seaborn pandas numpy plotly altair scipy
+pip install plotnine colorlover
+```
+
+### Running the Notebooks
+
+```bash
+git clone <this-repo>
+cd Visual_Types_and_Data_Visualization
+jupyter notebook
+```
+
+Open any of the three notebooks in the root directory to begin.
+
+---
+
+## Notebooks
+
+### Notebook 01 - Introduction to Data Types and Visualization Principles
+
+`visualization-intro-01_visualization-principles-w-matplotlib-and-seaborn.ipynb`
+
+<img src="./images/Smith_Data_Levels_Numerical.png"
      alt="Data Type and Encoding"
-     align="center" 
-     style="align:center" 
+     align="center"
+     style="align:center"
      width="30%"/>
-     
-    0) Introduction to RISE: Executable Slide Deck.
-    1) Principles of Visualization: Data Types and Their Connection to Visualizations.
-    2) Overview of Matplotlib
-    3) Overview of Seaborn
-    I) Additional References and Resources
-    II) Visualization Galleries
-    
-#### **II. Comparative Visualizations, and Advanced Visualizations Using Plotly and Altair.**
 
-<img src="assets/data/story_images/grammar_of_graphics_1_3stack.png"
-     alt="Data Type and Encoding"
-     align="center" 
-     style="align:center" 
+- Principles of visualization and data classification theory
+- Data types (nominal, ordinal, quantitative) and their connection to chart selection
+- Overview of Matplotlib (figure/axes/artist model)
+- Overview of Seaborn (statistical visualization)
+- Reference galleries and additional resources
+
+---
+
+### Notebook 02 - One Chart Across Several Visualization Libraries
+
+`visualization-intro-02_one-chart-several-visualization-libraries.ipynb`
+
+<img src="./images/grammar_of_graphics_1_3stack.png"
+     alt="Grammar of Graphics"
+     align="center"
+     style="align:center"
      width="40%"/>
-     
-    0) Brief Overview of Data Types.
-    1) A Brief Tour of Python's Entry-Level Visualization Landscape.
-    2) Two Dynamic Visualization Libraries, Using Real-World Data. 
-    3) One Plot: Static, Dynamic, and Interactive.
-    I) Additional References and Resources
-    
-    
-#### **III. Zero-Coding Visualizations, and Visualization Hosting.**
-<img src="assets/data/story_images/zero-coding_visualizations.png"
-     alt="zero-coding visualizations"
-     align="center" 
-     style="align:center" 
-     width="45%"/>
 
-    0) Install Tableau
-    1) Tableau Online 
-    2) Tableau Dashboards
-    3) Tableau in Jupyter
-    4) Plotly + Dash
-    I) Additional References and Resources
+- Brief review of data types
+- A tour of Python's entry-level visualization landscape (Pandas, Matplotlib, Seaborn, Plotnine)
+- Two dynamic visualization libraries using real-world data (Plotly, Altair)
+- One plot shown as static, dynamic, and interactive (Matplotlib → Plotly → K3D)
+
+---
+
+### Notebook 03 - Zero-Coding Visualization Libraries and Dashboards
+
+`visualization-intro-03_intro-to-tableau-and-visualization-hosting.ipynb`
+
+- Introduction to Tableau Online (no-code visualization)
+- Tufte's visualization principles applied in practice
+- Intro to Plotly Dash (Python dashboards)
+
+---
+
+## Breakout Exercises
+
+Hands-on exercises are in the `breakouts/` directory, one per notebook session:
+
+| Session | Topic | Directory |
+|---|---|---|
+| S1 | Plotting with Matplotlib | `breakouts/S1/` |
+| S2 | Multi-library visualization | `breakouts/S2/` |
+| S3 | Interactive and dashboard visualizations | `breakouts/S3/` |
+
+Each breakout directory has its own README with setup instructions.
+
+---
+
+## Repository Structure
+
+```
+/
+├── visualization-intro-01_*.ipynb    # Notebook 01
+├── visualization-intro-02_*.ipynb    # Notebook 02
+├── visualization-intro-03_*.ipynb    # Notebook 03
+├── breakouts/
+│   ├── S1/                           # Breakout exercises for Notebook 01
+│   ├── S2/                           # Breakout exercises for Notebook 02
+│   └── S3/                           # Breakout exercises for Notebook 03
+├── data/                             # Datasets (Iris, BII sample, tableau images)
+├── images/                           # Visualization theory reference images
+├── resources/                        # PDFs and cheatsheets
+├── DASH_Plotly/                      # Standalone Dash demo application
+└── README.md
+```
+
+---
+
+## References
+
+- Wilkinson, L. - *The Grammar of Graphics* (copy in `resources/`)
+- Tufte, E. - *The Visual Display of Quantitative Information* (copy in `resources/`)
+- Stanford CS 448B - Data Visualization Techniques
+- Nicolas P. Rougier's Matplotlib Tutorial
 
 <hr style="border: 2px solid#0B0B0B;" />
