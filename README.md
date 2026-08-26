@@ -1,7 +1,7 @@
-<hr style="border: 8px solid#003262;" />
+<hr style="border: 6px solid#003262;" />
 
 <div align="center">
-    <img src="./images/predli_header.png" align="center" width="30%" />
+    <img src="./images/thumbnails/ehcastroh_teach_banner_flower.png" align="center" width="20%" />
 </div>
 
 <br>
@@ -152,7 +152,6 @@ python DASH_Plotly/dash_intro.py
 Visualization principles and historical examples draw from Leland Wilkinson's *The Grammar of Graphics*, Edward Tufte's *The Visual Display of Quantitative Information*, and the curriculum of the Data Visualization Techniques course materials (CS 448B). Nicolas P. Rougier's Matplotlib tutorial is the basis for portions of the Matplotlib section.
 
 <hr style="border: 2px solid#003262;" />
----
 
 ## Contact
 
