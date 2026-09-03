@@ -149,7 +149,7 @@ python DASH_Plotly/dash_intro.py
 
 ## Credits and Acknowledgements
 
-Visualization principles and historical examples draw from Leland Wilkinson's *The Grammar of Graphics*, Edward Tufte's *The Visual Display of Quantitative Information*, and the curriculum of the Data Visualization Techniques course materials (CS 448B). Nicolas P. Rougier's Matplotlib tutorial is the basis for portions of the Matplotlib section.
+Visualization principles and historical examples draw from Leland Wilkinson's *The Grammar of Graphics*, Edward Tufte's *The Visual Display of Quantitative Information*, and publicly available Data Visualization Techniques course materials. Nicolas P. Rougier's Matplotlib tutorial is the basis for portions of the Matplotlib section.
 
 <hr style="border: 2px solid#003262;" />
 
