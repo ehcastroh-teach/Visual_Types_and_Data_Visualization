@@ -1,0 +1,17 @@
+[project]
+name = "visual-types-and-data-visualization"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "altair>=5.0",
+    "dash>=2.14",
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "plotly>=5.18",
+    "plotnine>=0.12",
+    "scipy>=1.11",
+    "seaborn>=0.13",
+    "vega-datasets>=0.9",
+]

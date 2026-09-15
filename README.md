@@ -124,11 +124,18 @@ Part 2 introduces Dash, Plotly's dashboard framework for Python. The key concept
 
 ## How to Run
 
+Prerequisites: [Nix](https://nixos.org/download) with flakes enabled. `flake.nix` provides
+Python and `uv` in a project-local devShell - nothing is installed system-wide.
+
 ```bash
 git clone https://github.com/ehcastroh-teach/Visual_Types_and_Data_Visualization.git
 cd Visual_Types_and_Data_Visualization
-pip install -r requirements.txt
-jupyter notebook
+
+# Enter the project's dev shell - this also runs `uv sync` automatically
+# the first time, creating .venv with every pinned dependency installed
+nix develop
+
+uv run jupyter notebook
 ```
 
 Open any of the four main notebooks in the root directory. Run all cells from top to bottom after a clean kernel restart (`Kernel > Restart & Run All`). All file paths inside notebooks are relative to the repo root, so keep the working directory at the repo root when launching Jupyter.
@@ -138,19 +145,19 @@ Open any of the four main notebooks in the root directory. Run all cells from to
 **Note on TabPy (notebook 03, Part 1.3):** TabPy is optional and must be installed separately:
 
 ```bash
-pip install tabpy-server
+uv add tabpy-server
 ```
 
-**Note on k3d (3D charts, notebook 02):** k3d requires JupyterLab and ipywidgets and is not included in `requirements.txt`:
+**Note on k3d (3D charts, notebook 02):** k3d requires JupyterLab and ipywidgets and is not included in `pyproject.toml`:
 
 ```bash
-pip install k3d
+uv add k3d
 ```
 
 To run the standalone Dash application:
 
 ```bash
-python DASH_Plotly/dash_intro.py
+uv run python DASH_Plotly/dash_intro.py
 # then open http://127.0.0.1:8050 in a browser
 ```
 
